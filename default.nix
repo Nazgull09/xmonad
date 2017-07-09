@@ -33,9 +33,11 @@ in
     src = pkgs.fetchFromGitHub {
       owner = "robertodr";
       repo = "xmonad";
-      rev = "28c2f74";
-      sha256 = "10b308a7c4a6285bfff8298a3f9e7e3119c652f21fbb3d31beb92d2f8b57eee8";
+      rev = "d67887e484a6e9f715d8e25d5634c57bf26c3856";
+      sha256 = "18rrjwv0jv6vmmsjh30i42nph4ds7hpw8896qrr8mlzy7vci1p4i";
+      fetchSubmodules = true;
     };
+ 
     buildInputs = with pkgs.haskellPackages; [
       xmonad
       xmonad-extras
